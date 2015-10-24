@@ -93,6 +93,28 @@ $('aside a').on('click', function(event) {
 
   $('#photos').html(photosHTML);
 
+  $('.pic').on('click', function(event) {
+    event.preventDefault();
+    //var clickedSection = "." + $(this).attr('rel');
+    //selectedAlbum = $(this).attr("rel");
+    selectedPic = $(this).attr("id");
+    $("#single_photo").addClass('activeSection');
+    $("#single_album").removeClass('activeSection');
+    var singlePicHTML = "<h1>" + currPhotos[selectedPic].name + "</h1><a href='' rel= '" + currPhotos[selectedPic].name +"'>Back to " + selectedAlbum + "</a><img src='" + currPhotos[selectedPic].url + "'>";
+
+    $('#single_picture').html(singlePicHTML);
+
+
+    $('#single_picture a').on('click', function(event){
+      event.preventDefault();
+      $("#single_photo").removeClass('activeSection');
+      $("#single_album").addClass('activeSection');
+
+    });
+
+
+  });
+
 });
 
 
