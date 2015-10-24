@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/html" id="albumTmpl"> <!-- give nonstandard type so browser leaves alone -->
+      <article id="<%= name%>" class="photo-album">
+        <img src="<%= photos[0].url %>">
+        <h3><%=name%></h3>
+      </article>
+    </script>
+    <script type="text/html" id="navTmpl"> <!-- give nonstandard type so browser leaves alone -->
+      <a href="" rel="<%=name%>"><%=name%></a>
+    </script>
+    <!--<script type="text/html" id="photosTmpl"> 
+      <article id="photo<%=idx%>" class="pic" rel="<%selectedAlbum%>">
+        <img src="<%=url%>">
+        <h3><%=name%></h3>
+      </article>
+    </script> -->
+  </head>
+  <body>
+
+<div id="start" class ="activeSection">
+<header>
+  <h1>My Mess Their Kitchen Culinary Adventures</h1>
+</header>
+
+<section id="home">
+</section>
+</div>
+
+<div id="single_album">
+<aside>
+</aside>
+<section id="photos">
+</section>
+</div>
+
+<div id="single_photo">
+  <section id="single_picture">
+</section>
+</div>
+
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="albums2.js" charset="utf-8"></script>
+    <script src="second.js" charset="utf-8"></script>
+  </body>
+</html>

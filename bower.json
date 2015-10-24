@@ -1,0 +1,23 @@
+{
+  "name": "photo-album",
+  "authors": [
+    "tken85"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4",
+    "normalize-css": "~3.0.3"
+  }
+}

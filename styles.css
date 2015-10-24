@@ -1,0 +1,68 @@
+body {
+  text-align: center; }
+
+header {
+  background-color: gray;
+  color: white;
+  min-height: 50px; }
+  header h1 {
+    text-align: center;
+    margin-top: 0; }
+
+div {
+  display: none; }
+
+#home {
+  width: 95%;
+  margin: 0 auto; }
+  #home article {
+    width: 30%;
+    display: inline-block;
+    margin: 10px; }
+    #home article img {
+      width: 100%; }
+    #home article h3 {
+      text-align: center;
+      background-color: blue;
+      color: white;
+      margin-top: -5px; }
+
+/*header, #home{
+  display: none;
+}*/
+aside {
+  width: 30%;
+  background-color: red;
+  text-align: center;
+  height: 500px;
+  display: inline-block;
+  vertical-align: top; }
+  aside a {
+    display: block;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid gray; }
+
+.activeSection {
+  display: inline-block; }
+
+#single_album {
+  width: 100%; }
+
+#photos {
+  width: 65%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center; }
+  #photos img {
+    width: 100%; }
+  #photos article {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px; }
+
+#single_picture img {
+  width: 75%; }
+
+#single_picture a {
+  vertical-align: top; }
