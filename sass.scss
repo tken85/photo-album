@@ -41,7 +41,7 @@ div {
   display: none;
 }*/
 aside {
-  width: 30%;
+  width: 20%;
   background-color: red;
   text-align: center;
   height: 500px;
@@ -59,11 +59,15 @@ aside {
   display: inline-block;
 }
 
+.photo-album {
+  vertical-align: top;
+}
+
 #single_album{
   width: 100%;
 }
 #photos{
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
@@ -79,7 +83,7 @@ aside {
 
 #single_picture{
   img{
-    width: 75%;
+    width: 50%;
   }
   a{
     vertical-align: top;

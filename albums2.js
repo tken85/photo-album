@@ -47,12 +47,12 @@ var albums = [
   {
   name: "Pies",
   photos: [{
-   url: "images/chocolatemeringuepie.jpg",
-   name: "Chocolate Meringue Pie"},{
-   url: "images/minicherrypie.jpg",
-   name: "Mini Cherry Pie"},{
-   url: "images/bumbleberrypie.jpg",
-   name: "Bumbleberry Pie",
+    url: "images/minicherrypie.jpg",
+    name: "Mini Cherry Pie"},{
+    url: "images/chocolatemeringuepie.jpg",
+    name: "Chocolate Meringue Pie"},{
+    url: "images/bumbleberrypie.jpg",
+    name: "Bumbleberry Pie",
   }]
   },
   {
