@@ -6,21 +6,15 @@
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/html" id="albumTmpl"> <!-- give nonstandard type so browser leaves alone -->
+    <script type="text/html" id="albumTmpl">
       <article id="<%= name%>" class="photo-album">
         <img src="<%= photos[0].url %>">
         <h3><%=name%></h3>
       </article>
     </script>
-    <script type="text/html" id="navTmpl"> <!-- give nonstandard type so browser leaves alone -->
+    <script type="text/html" id="navTmpl">
       <a href="" rel="<%=name%>"><%=name%></a>
     </script>
-    <!--<script type="text/html" id="photosTmpl">
-      <article id="photo<%=idx%>" class="pic" rel="<%selectedAlbum%>">
-        <img src="<%=url%>">
-        <h3><%=name%></h3>
-      </article>
-    </script> -->
   </head>
   <body>
 

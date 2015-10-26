@@ -35,7 +35,7 @@ $('aside').html(navHTML);
 
 //make single picture
 
-$('#single_picture').html("<h1></h1><a href='' rel= '" + currPic.name +"'>Back to " + selectedAlbum + "</a><article id='previous'>Previous</article><article id='current'><img src='" + currPic.url + "'></article><article id='next'>Next</article>");
+$('#single_picture').html("<section><h1></h1><a href=''> Back to " + selectedAlbum + "</a></section><article id='previous'>Previous</article><article id='current'><img src='" + currPic.url + "'></article><article id='next'>Next</article>");
 
 
 $('.photo-album').on('click', function(event) {

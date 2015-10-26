@@ -1,5 +1,10 @@
+$backBlue : #036;
+$textBlue : #9cf;
+
+
 body{
   text-align: center;
+  font-family: helvetica, sans-serif;
 }
 
 img{
@@ -7,12 +12,13 @@ img{
 }
 
 header {
-  background-color: gray;
-  color: white;
-  min-height: 50px;
+  background-color: $backBlue;
+  color: $textBlue;
+  min-height: 100px;
   h1{
     text-align: center;
     margin-top:0;
+    padding-top: 30px;
   }
 }
 
@@ -26,43 +32,48 @@ div {
     width: 30%;
     display: inline-block;
     margin: 10px;
+    box-shadow: 10px 10px 10px gray;
     img{
       width: 100%;
 
     }
     h3{
       text-align: center;
-      background-color: blue;
-      color: white;
+      background-color: $backBlue;
+      color: $textBlue;
       margin-top: -5px;
+      margin-bottom: 0;
+      height: 50px;
+      padding-top: 22px;
+      border-radius: 2px;
 
     }
   }
 }
 
-/*header, #home{
-  display: none;
-}*/
+
 aside {
   width: 20%;
-  background-color: red;
+  background-color: $backBlue;
   text-align: center;
-  height: 500px;
+  height: 550px;
   display: inline-block;
   vertical-align: top;
-  padding-top: 100px;
+  padding-top: 200px;
   border-radius: 2px;
   a{
     display: block;
     margin: 10px auto;
     background-color: white;
-    border: 2px solid gray;
     border-radius: 3px;
     text-decoration: none;
     width: 75%;
     text-align: center;
     font-size: 24px;
-    color: black;
+    color: $backBlue;
+    &:hover{
+      background-color: #E1E1E1;
+    }
   }
 }
 
@@ -82,22 +93,83 @@ aside {
   margin: 0 auto;
   display: inline-block;
   text-align: center;
+  h1{
+    margin-bottom: 110px;
+    color: $backBlue;
+    font-size: 56px;
+  }
   img{
     width: 100%;
+    box-shadow: 10px 10px 10px gray;
+    &:hover{
+      box-shadow: 10px 10px 10px $textBlue;
+    }
   }
   article{
     display: inline-block;
     width: 30%;
     margin:0 10px;
+    color: $backBlue;
   }
 }
 
 #single_picture{
+  #current, #previous, #next{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #current{
+    width: 60%;
+
+  }
+
+  #previous{
+    //padding-right: 25px;
+    background-color: $backBlue;
+    padding: 4px 0px;
+    border-radius: 8px;
+    color: $textBlue;
+    margin-right: 25px;
+    width: 10%;
+    box-shadow: 4px 4px 4px gray;
+  }
+
+  #next{
+    padding-left: 25px;
+    background-color: $backBlue;
+    padding: 4px 0px;
+    border-radius: 8px;
+    color: $textBlue;
+    margin-left: 25px;
+    width: 10%;
+    box-shadow: 4px 4px 4px gray;
+  }
+
+  section{
+    margin-bottom: 20px;
+    position: relative;
+    h1{
+      margin: 0;
+      color: $backBlue;
+      font-size: 56px;
+    }
+  }
   img{
-    width: 50%;
+    width: 100%;
+    box-shadow: 10px 10px 10px gray;
   }
   a{
     vertical-align: top;
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: $backBlue;
+    border-radius: 8px;
+    color: $textBlue;
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    box-shadow: 4px 4px 4px gray;
   }
 }
 
