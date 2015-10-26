@@ -2,72 +2,68 @@ var albums = [
 
    {
   name: "Burgers",
-  photos: {
-    photo1: "images/banhmiburger.jpg",
-    photo1_name: "Banh Mi Burger",
-    photo2: "images/cowboyburger.JPG",
-    photo2_name: "Cowboy Burger",
-    photo3: "images/jerkburger.JPG",
-    photo3_name: "Jerk Burger",
-  }
+  photos: [{
+    url: "images/banhmiburger.jpg",
+    name: "Banh Mi Burger"},{
+    url: "images/cowboyburger.JPG",
+    name: "Cowboy Burger"},{
+    url: "images/jerkburger.JPG",
+    name: "Jerk Burger",
+  }]
   },
-
-{
+  {
   name: "Tacos",
-  photos: {
-    photo1: "images/briskettaco.jpg",
-    photo1_name: "Brisket Taco",
-    photo2: "images/crawfishtaco.jpg",
-    photo2_name: "Crawfish Taco",
-    photo3: "images/koreantaco.jpg",
-    photo3_name: "Korean Taco",
-  }
-},
-{
+  photos: [{
+   url: "images/briskettaco.jpg",
+   name: "Brisket Taco"},{
+   url: "images/crawfishtaco.jpg",
+   name: "Crawfish Taco"},{
+   url: "images/koreantaco.jpg",
+   name: "Korean Taco",
+  }]
+  },
+  {
   name: "Cupcakes",
-  photos: {
-    photo1: "images/cadburycupcake.jpg",
-    photo1_name: "Cadbury Cupcake",
-    photo2: "images/buckeyecupcake.jpg",
-    photo2_name: "Buckeye Cupcake",
-    photo3: "images/redhotcupcake.jpg",
-    photo3_name: "Red Hot Cupcake",
-  }
-},
-{
+  photos: [{
+   url: "images/cadburycupcake.jpg",
+   name: "Cadbury Cupcake"},{
+   url: "images/buckeyecupcake.jpg",
+   name: "Buckeye Cupcake"},{
+   url: "images/redhotcupcake.jpg",
+   name: "Red Hot Cupcake",
+  }]
+  },
+  {
   name: "Cookies",
-  photos: {
-      photo1: "images/smores.jpg",
-      photo1_name: "S'mores Cookie",
-      photo2: "images/whoopiepie.jpg",
-      photo2_name: "Whoopie Pie",
-      photo3: "images/easter.jpg",
-      photo3_name: "Easter Sugar Cookie",
-    }
-},
-
-{
+  photos: [{
+   url: "images/smores.jpg",
+   name: "S'mores Cookie"},{
+   url: "images/whoopiepie.jpg",
+   name: "Whoopie Pies"},{
+   url: "images/easter.jpg",
+   name: "Easter Sugar Cookies",
+  }]
+  },
+  {
   name: "Pies",
-  photos: {
-    photo1: "images/chocolatemeringuepie.jpg",
-    photo1_name: "Chocolate Meringue Pie",
-    photo2: "images/minicherrypie.jpg",
-    photo2_name: "Mini Cherry Pie",
-    photo3: "images/bumbleberrypie.jpg",
-    photo3_name: "Bumbleberry Pie",
-  }
-},
-{
+  photos: [{
+    url: "images/minicherrypie.jpg",
+    name: "Mini Cherry Pie"},{
+    url: "images/chocolatemeringuepie.jpg",
+    name: "Chocolate Meringue Pie"},{
+    url: "images/bumbleberrypie.jpg",
+    name: "Bumbleberry Pie",
+  }]
+  },
+  {
   name: "Waffles",
-  photos: {
-    photo1: "images/srirachawaffle.jpg",
-    photo1_name: "Sriracha Waffle",
-    photo2: "images/funfettiwaffle.jpg",
-    photo2_name: "Funfetti Waffle",
-    photo3: "images/chickenwaffle.jpg",
-    photo3_name: "Chicken and Waffles",
-  }
-}
-
-
+  photos: [{
+   url: "images/srirachawaffle.jpg",
+   name: "Sriracha Waffle"},{
+   url: "images/funfettiwaffle.jpg",
+   name: "Funfetti Waffle"},{
+   url: "images/chickenwaffle.jpg",
+   name: "Chicken and Waffles",
+  }]
+  },
 ];

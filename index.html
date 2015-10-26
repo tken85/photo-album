@@ -5,6 +5,7 @@
     <title>Photo Album</title>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/html" id="albumTmpl"> <!-- give nonstandard type so browser leaves alone -->
       <article id="<%= name%>" class="photo-album">
         <img src="<%= photos[0].url %>">
@@ -14,7 +15,7 @@
     <script type="text/html" id="navTmpl"> <!-- give nonstandard type so browser leaves alone -->
       <a href="" rel="<%=name%>"><%=name%></a>
     </script>
-    <!--<script type="text/html" id="photosTmpl"> 
+    <!--<script type="text/html" id="photosTmpl">
       <article id="photo<%=idx%>" class="pic" rel="<%selectedAlbum%>">
         <img src="<%=url%>">
         <h3><%=name%></h3>
@@ -46,7 +47,7 @@
 
     <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
     <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-    <script src="albums2.js" charset="utf-8"></script>
-    <script src="second.js" charset="utf-8"></script>
+    <script src="albums.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -2,6 +2,9 @@ body{
   text-align: center;
 }
 
+img{
+  border-radius: 2px;
+}
 
 header {
   background-color: gray;
@@ -47,11 +50,19 @@ aside {
   height: 500px;
   display: inline-block;
   vertical-align: top;
+  padding-top: 100px;
+  border-radius: 2px;
   a{
     display: block;
-    margin: 5px;
+    margin: 10px auto;
     background-color: white;
     border: 2px solid gray;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 75%;
+    text-align: center;
+    font-size: 24px;
+    color: black;
   }
 }
 
@@ -87,5 +98,22 @@ aside {
   }
   a{
     vertical-align: top;
+  }
+}
+
+@media (max-width: 700px){
+  aside{
+    a{
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media(max-width: 500px){
+  aside{
+    a{
+      font-size: 12px;
+    }
   }
 }

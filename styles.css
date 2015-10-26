@@ -1,6 +1,9 @@
 body {
   text-align: center; }
 
+img {
+  border-radius: 2px; }
+
 header {
   background-color: gray;
   color: white;
@@ -36,12 +39,20 @@ aside {
   text-align: center;
   height: 500px;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  padding-top: 100px;
+  border-radius: 2px; }
   aside a {
     display: block;
-    margin: 5px;
+    margin: 10px auto;
     background-color: white;
-    border: 2px solid gray; }
+    border: 2px solid gray;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 75%;
+    text-align: center;
+    font-size: 24px;
+    color: black; }
 
 .activeSection {
   display: inline-block; }
@@ -69,3 +80,11 @@ aside {
 
 #single_picture a {
   vertical-align: top; }
+
+@media (max-width: 700px) {
+  aside a {
+    font-size: 16px; } }
+
+@media (max-width: 500px) {
+  aside a {
+    font-size: 12px; } }
