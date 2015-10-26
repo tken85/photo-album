@@ -7,7 +7,6 @@ var nextPic = "";
 
 $(document).ready(function(){
 
-
 //create home page
 var albumTemplate = _.template($('#albumTmpl').html());
 var albumHTML = "";

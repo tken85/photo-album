@@ -41,7 +41,7 @@ var albums = [
    url: "images/whoopiepie.jpg",
    name: "Whoopie Pies"},{
    url: "images/easter.jpg",
-   name: "Easter Sugar Cookies",
+   name: "Easter Cookies",
   }]
   },
   {
