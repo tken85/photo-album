@@ -1,3 +1,5 @@
+//special shoutout to Sally for suggesting a data shape like this
+
 var albums = [
 
    {
