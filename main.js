@@ -36,6 +36,7 @@ $('aside').html(navHTML);
 
 $('#single_picture').html("<section><h1></h1><a href=''> Back to " + selectedAlbum + "</a></section><article id='previous'>Previous</article><article id='current'><img src='" + currPic.url + "'></article><article id='next'>Next</article>");
 
+// Click functionality for photo album on home page bringing you to the single album display
 
 $('.photo-album').on('click', function(event) {
   event.preventDefault();
@@ -58,12 +59,14 @@ $('.photo-album').on('click', function(event) {
 
   $('#photos').html(photosHTML);
 
+// Setting click event to bring you to single picture viewing
+
   $('.pic').on('click', function(event) {
     event.preventDefault();
     selectedPic = parseInt($(this).attr("id"));
     $("#single_photo").addClass('activeSection');
     $("#single_album").removeClass('activeSection');
-    // set current, previous, and next pics
+    // set current, previous, and next pics. conditional on position in array
     currPic = currPhotos[selectedPic];
     previousPic = currPhotos[selectedPic -1];
     nextPic = currPhotos[selectedPic+1];
@@ -73,10 +76,7 @@ $('.photo-album').on('click', function(event) {
     else if (selectedPic === (currPhotos.length -1)){
       nextPic = currPhotos[0];
     }
-    //set HTML
-    //var singlePicHTML = "<h1>" + currPic.name + "</h1><a href='' rel= '" + currPic.name +"'>Back to " + selectedAlbum + "</a><article id='previous'>Previous</article><article id='current'><img src='" + currPic.url + "'></article><article id='next'>Next</article>";
 
-    //$('#single_picture').html(singlePicHTML);
     $('#current').html("<img src='" + currPic.url +"'>");
     $('#single_picture h1').html(currPic.name);
     $('#single_picture a').html("Back to " + selectedAlbum);
@@ -87,6 +87,7 @@ $('.photo-album').on('click', function(event) {
 
     });
 
+//Click to see previous picture in album
     $('#previous').on('click', function(event){
       event.preventDefault();
       $('#current').html("<img src='" + previousPic.url+"'>");
@@ -107,6 +108,8 @@ $('.photo-album').on('click', function(event) {
         nextPic = currPhotos[0];
       }
     });
+
+//click to see next picture in album
 
     $('#next').on('click', function(event){
       event.preventDefault();
@@ -131,6 +134,8 @@ $('.photo-album').on('click', function(event) {
 
   });
 });
+
+//Click functionality for changing album displayed in single album view
 
 $('aside a').on('click', function(event) {
   event.preventDefault();
@@ -166,10 +171,7 @@ $('aside a').on('click', function(event) {
     else if (selectedPic === (currPhotos.length -1)){
       nextPic = currPhotos[0];
     }
-    //put in HTML
-    //var singlePicHTML = "<h1>" + currPic.name + "</h1><a href='' rel= '" + currPic.name +"'>Back to " + selectedAlbum + "</a><img src='" + currPic.url + "'>";
-
-    //$('#single_picture').html(singlePicHTML);
+  
     $('#current').html("<img src='" + currPic.url +"'>");
     $('#single_picture h1').html(currPic.name);
     $('#single_picture a').html("Back to " + selectedAlbum);

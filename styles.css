@@ -115,7 +115,7 @@ aside {
   box-shadow: 4px 4px 4px gray; }
 
 #single_picture section {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   position: relative; }
   #single_picture section h1 {
     margin: 0;
@@ -135,7 +135,7 @@ aside {
   color: #9cf;
   position: absolute;
   left: 20%;
-  top: 80%;
+  top: 83%;
   box-shadow: 4px 4px 4px gray; }
 
 @media (max-width: 700px) {
