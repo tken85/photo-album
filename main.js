@@ -1,3 +1,5 @@
+//this is the initial non-refactored code
+
 var selectedAlbum ="";
 var selectedPic = "";
 var currPhotos ="";
@@ -69,7 +71,6 @@ var loadAlbum = function(selAlbum){
   event.preventDefault();
   $('#single_album').addClass('activeSection');
   $("#start").removeClass('activeSection');
-  //selectedAlbum = $(this).attr("rel");
 
   currPhotos = albums.filter(function(currVal){
     return currVal.name === selectedAlbum;
